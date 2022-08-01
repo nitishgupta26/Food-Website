@@ -1,0 +1,19 @@
+{
+  "name": "kitchen24",
+  "version": "1.0.0",
+  "description": "food website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "food"
+  ],
+  "author": "mishal gupta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.22",
+    "pug": "^3.0.0"
+  }
+}

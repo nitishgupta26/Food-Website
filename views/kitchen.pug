@@ -1,0 +1,361 @@
+//-  doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    // Fonts
+    link(href='https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap', rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700', rel='stylesheet', type='text/css')
+    // Css
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/static/tutorial38.css')
+    link(rel='stylesheet', media='screen and (max-width: 1170px)', href='/static/tutorial38(phone).css')
+    link(rel='stylesheet', href='/static/bootstrap.min.css')
+    link(rel='stylesheet', href='/static/style.css')
+    title #{title}
+  body
+    nav.navbarr.h-nav-resp
+      #logo
+        a(href='#home')
+          img(src='/static/logo.png', alt='MyOnlineMeal.com')
+      ul.nav-list.v-class-resp
+        li.item
+          a(href='#home') Home
+        li.item
+          a(href='#services-container') About
+        li.item
+          a(href='#Menu') Menu
+        li.item
+          a(href='#gallery') Gallery
+        li.item
+          a(href='#contact') Contact Us
+    .burger
+      .line
+      .line
+      .line
+    section#home
+      h1.h-primary Welcome to Kitchen24
+      p.typewriter Feel the taste....
+      button.btnnn
+        a(href='#contact') Order Now
+    section#services-container
+      h1.h-primary.center About us
+      p.center
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit
+        | feugia ipsum dolor sit amet consectetur adipisicing elit. Sint, nemo!
+      p.center
+        | Sed semper orci sit amet porta placerat. Lorem ipsum, dolor sit amet consectetur adipisicing
+        | elit. Temporibus dolore psum qu harum sequi deleniti! Etiam quis finibus eros. Sed aliquam metus
+        | lorem, a pellentesque.
+      h3.center Our Services
+      #services
+        .box
+          img(src='/static/2.png', alt='')
+          h2.h-secondary.center Food Catering
+          p.center
+            | our high-quality food and professional presentations winning the
+            | hearts of multiple corporate clients!
+        .box
+          img(src='/static/1.png', alt='')
+          h2.h-secondary.center Street Food
+          p.center
+            | We want to try that tasty new looking dish in the restaurant but the lower cost of
+            | street food makes it.
+        .box
+          img(src='/static/3.png', alt='')
+          h2.h-secondary.center Food Delivery
+          p.center
+            | Parcel Pick up or deliver a parcel right to your door with trackable delivery and
+            | efficient way with accurate
+            | status.!
+    hr(style='border: 10px solid rgb(0, 0, 0);\
+    border-radius: 10px;\
+    width: 95%;')
+    // <div class="menu-body">
+    // <h1 class="h-primary center ">Our Menu</h1>
+    section#Menu
+      // Start Menu
+      .menu-box
+        h1.h-primary.center Our Menu
+        .container
+          .row
+            .col-lg-12
+              .heading-title.text-center
+                h2 Special Menu
+                p PLEASE TYPE YOUR ORDER IN THE CONTACT BOX.
+          .row.inner-menu-box
+            .col-3
+              #v-pills-tab.nav.flex-column.nav-pills(role='tablist', aria-orientation='vertical')
+                a#v-pills-home-tab.nav-link.active(data-toggle='pill', href='#v-pills-home', role='tab', aria-controls='v-pills-home', aria-selected='true') All
+                a#v-pills-profile-tab.nav-link(data-toggle='pill', href='#v-pills-profile', role='tab', aria-controls='v-pills-profile', aria-selected='false') Drinks
+                a#v-pills-messages-tab.nav-link(data-toggle='pill', href='#v-pills-messages', role='tab', aria-controls='v-pills-messages', aria-selected='false')
+                  | Lunch
+                  // < /a
+                a#v-pills-settings-tab.nav-link(data-toggle='pill', href='#v-pills-settings', role='tab', aria-controls='v-pills-settings', aria-selected='false') Dinner
+            .col-9
+              #v-pills-tabContent.tab-content
+                #v-pills-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='v-pills-home-tab')
+                  .row
+                    .col-lg-4.col-md-6.special-grid.drinks
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-01.jpg', alt='Image')
+                        .why-text
+                          h4 Special Drinks 1
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 7.79
+                    .col-lg-4.col-md-6.special-grid.drinks
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-02.jpg', alt='Image')
+                        .why-text
+                          h4 Special Drinks 2
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 9.79
+                    .col-lg-4.col-md-6.special-grid.drinks
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-03.jpg', alt='Image')
+                        .why-text
+                          h4 Special Drinks 3
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 10.79
+                    .col-lg-4.col-md-6.special-grid.lunch
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-04.jpg', alt='Image')
+                        .why-text
+                          h4 Special Lunch 1
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 15.79
+                    .col-lg-4.col-md-6.special-grid.lunch
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-05.jpg', alt='Image')
+                        .why-text
+                          h4 Special Lunch 2
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 18.79
+                    .col-lg-4.col-md-6.special-grid.lunch
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-06.jpg', alt='Image')
+                        .why-text
+                          h4 Special Lunch 3
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 20.79
+                    .col-lg-4.col-md-6.special-grid.dinner
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-07.jpg', alt='Image')
+                        .why-text
+                          h4 Special Dinner 1
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 25.79
+                    .col-lg-4.col-md-6.special-grid.dinner
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-08.jpg', alt='Image')
+                        .why-text
+                          h4 Special Dinner 2
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 22.79
+                    .col-lg-4.col-md-6.special-grid.dinner
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-09.jpg', alt='Image')
+                        .why-text
+                          h4 Special Dinner 3
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 24.79
+                #v-pills-profile.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-profile-tab')
+                  .row
+                    .col-lg-4.col-md-6.special-grid.drinks
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-01.jpg', alt='Image')
+                        .why-text
+                          h4 Special Drinks 1
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 7.79
+                    .col-lg-4.col-md-6.special-grid.drinks
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-02.jpg', alt='Image')
+                        .why-text
+                          h4 Special Drinks 2
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 9.79
+                    .col-lg-4.col-md-6.special-grid.drinks
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-03.jpg', alt='Image')
+                        .why-text
+                          h4 Special Drinks 3
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 10.79
+                #v-pills-messages.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-messages-tab')
+                  .row
+                    .col-lg-4.col-md-6.special-grid.lunch
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-04.jpg', alt='Image')
+                        .why-text
+                          h4 Special Lunch 1
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 15.79
+                    .col-lg-4.col-md-6.special-grid.lunch
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-05.jpg', alt='Image')
+                        .why-text
+                          h4 Special Lunch 2
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 18.79
+                    .col-lg-4.col-md-6.special-grid.lunch
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-06.jpg', alt='Image')
+                        .why-text
+                          h4 Special Lunch 3
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 20.79
+                #v-pills-settings.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab')
+                  .row
+                    .col-lg-4.col-md-6.special-grid.dinner
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-07.jpg', alt='Image')
+                        .why-text
+                          h4 Special Dinner 1
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 25.79
+                    .col-lg-4.col-md-6.special-grid.dinner
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-08.jpg', alt='Image')
+                        .why-text
+                          h4 Special Dinner 2
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 22.79
+                    .col-lg-4.col-md-6.special-grid.dinner
+                      .gallery-single.fix
+                        img.img-fluid(src='/static/img-09.jpg', alt='Image')
+                        .why-text
+                          h4 Special Dinner 3
+                          p Sed id magna vitae eros sagittis euismod.
+                          h5  Rs. 24.79
+      // End Menu
+      // gallery section
+      // <div id="gallery">
+      section#gallery
+        //
+          <div class="containerr">
+          <div class="box">
+          <div class="imgbox">
+          <img src="./img/sam-loyd-RLIhzcnl7IQ-unsplash.jpg" alt="">
+          </div>
+          <div class="details">
+          <div class="content">
+          <h2>what isgkugkgs</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempore aliquid
+          facilis optio qui
+          sed
+          cumque tempora impedit, est error vitae quidem laboriosam dolorum, sint debitis aut veniam
+          quasi blanditiis?
+          </p>
+          </div>
+          </div>
+          </div>
+          </div>
+        hr(style='border: 10px solid rgb(0, 0, 0);\
+        border-radius: 5px;\
+        width: 100%;')
+        h1.h-primary.center Our Gallery
+        .gallery-image
+          .img-box
+            img(src='/static/sam-loyd-RLIhzcnl7IQ-unsplash.jpg', alt='')
+            .transparent-box
+              .caption
+                p Wedding
+                p.opacity-low description
+          .img-box
+            img(src='/static/shaafi-ali-Uck7TR7XYFo-unsplash.jpg', alt='')
+            .transparent-box
+              .caption
+                p Breakfast
+                p.opacity-low description
+          .img-box
+            img(src='/static/louis-hansel-shotsoflouis-iBfVwYwA3ek-unsplash.jpg', alt='')
+            .transparent-box
+              .caption
+                p Birthdays
+                p.opacity-low description
+          .img-box
+            img(src='/static/lior-shapira-GKxsKNTfZd8-unsplash.jpg', alt='')
+            .transparent-box
+              .caption
+                p Dinner
+                p.opacity-low description
+          .img-box
+            img(src='/static/edward-franklin-Nb_Q-M3Cdzg-unsplash.jpg', alt='')
+            .transparent-box
+              .caption
+                p Parties
+                p.opacity-low description
+          .img-box
+            img(src='/static/davide-cantelli-jpkfc5_d-DI-unsplash.jpg', alt='')
+            .transparent-box
+              .caption
+                p Festivals
+                p.opacity-low description
+      section#contact
+        h1.h-primary.center.padding Contact Us
+        .block
+          h4 GET IN TOUCH
+          p
+            i.fa.fa-map-marker(style='font-size:40px;')
+            span Kitchen24:
+            | 10-xyz jaipur, india
+          p
+            i.fa.fa-phone(style='font-size:40px;')
+            span Phone:
+            |  (+0141) xxxx xxxx
+          p
+            i.fa.fa-mobile(style='font-size:40px;')
+            span Mobile:
+            |  (+91) xxxxx xxxxx
+          p.mail
+            i.fa.fa-envelope(style='font-size:40px;')
+            |  Email:
+            span order@Kitchen24.com
+        #contact-box
+          form(action='/', method='post')
+            .form-group
+              label(for='name') Name: 
+              input#name(type='text', name='name', placeholder='Enter your name')
+            .form-group
+              label(for='email') Phone Number: 
+              input#email(type='phone', name='phone', placeholder='Enter your phone no.')
+            .form-group
+              label(for='phone') Address: 
+              input#phone(type='address', name='address', placeholder='Enter your address')
+            .form-group
+              label(for='message') Your Order: 
+              textarea#message(name='order', cols='30', rows='10')
+            button.btnnn.button-p Send
+      footer
+        .center
+          | Copyright ©2020 | Kitchen24.com -All rights reserved!
+          p  By Mishal Gupta
+      // Move to top section
+      #myBtn.fa.fas.fa-angle-double-up(onclick='topFunction()', title='Go to top')
+      // gear icon
+      #m
+        #div1.fa.fa-cog.fa-spin.fa-3x.fa-fw
+      script(src='/static/app.js')
+      script(src='/static/jquery-3.2.1.min.js')
+      script(src='/static/bootstrap.min.js')
+      script(src='https://code.jquery.com/jquery-1.12.4.min.js')
+      script.
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }

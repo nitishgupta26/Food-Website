@@ -1,0 +1,523 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+scroll-behavior: smooth; 
+}
+
+/* CSS Variables */
+/* :root{
+    --navbar-height: 59px;
+} */
+
+/* Navigation Bar */
+.navbarr{
+  overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: sticky;
+    top: 0px;
+    z-index: 99; 
+    cursor: pointer;
+
+   } 
+
+.navbarr::before{
+    content: "";
+    background-color: rgb(76, 73, 73);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 95%;
+    width:100%;
+    z-index: -1;
+    opacity: .9;
+} 
+.burger{
+    display: none;
+position: fixed;
+cursor: pointer;
+top: 3%;
+right: 5%;
+}
+
+.line{
+    width: 33px;
+    background-color: rgb(255, 255, 255);
+    height: 5px;
+    margin: 6px 3px;
+   }
+
+   .line:hover{
+    background-color: rgb(255, 30, 0);
+   }
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+.navbarr ul{
+    display: flex;
+    margin-top: 1%;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 20px 25px;
+}
+
+.nav-list li a{
+text-decoration: none;
+color: white;
+font-size: 18px;
+font-family: 'Ubuntu', sans-serif;
+}
+.nav-list li a:hover{
+    color: rgb(0, 0, 0);
+     border-radius: 20px;
+    background-color: white;
+    outline: none;
+    padding: 5px 5px;
+}
+
+/* Services Section */
+#services{
+  margin: 34px;
+  display: flex;
+  }
+  
+  #services .box{ 
+    border: 2px solid brown;
+    padding: 5px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 2px;
+}
+
+#services-container{
+  padding: 75px 2%;
+}
+
+#services-container h3{
+  margin-top: 5%;
+ font-size: 200%;
+}
+
+#services .box img{ 
+  height: 160px;
+   margin: auto;
+   display: block;
+  }
+
+  #services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+.box img:hover{
+transform: scale(1.2);
+}
+
+
+/* menu Section */
+ 
+  /* Home Section */
+  #home{
+      /* position: fixed; */
+      display: flex;
+      flex-direction: column;
+      padding:3px 200px;
+      height: 550px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #home::before{ 
+      content: "";
+      position: absolute;
+       background: url('/static/lidye-1Shk_PkNkNw-unsplash.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 750px;
+      top:0px;
+      left:0px;
+      width: 100%;
+      z-index: -1;
+      opacity:0.89;
+  }
+  
+  #home h1{
+      color:white;
+      padding-bottom: 2%;
+      text-align: center;
+      font-family: 'Bree Serif', serif;
+  }
+  
+  #home p{
+    padding-bottom: 2%;
+      color:white;
+      text-align: center;
+      font-size: 200%;
+      font-family: 'Bree Serif', serif;
+  }
+  /* typing STYLES */
+  .typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 5s infinite steps(30, end),
+      blink-caret .5s;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 65% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+
+/* Contact Section */
+/* #contact{
+  position: flex;
+  } */
+
+#contact h1{
+  padding: 6%;
+}
+
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 154%;
+  z-index: -1;
+  opacity: 0.7;
+  background-color: rgb(214, 182, 122);
+  
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+  width: 110%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+} 
+
+#contact-box form{
+  width: 60%;
+  margin-right: 20%;
+}
+
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: 'Bree Serif', serif;
+  
+}
+    .block{ 
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+    margin-left: 10%;
+    padding: 20px; 
+    }
+
+.block p{
+  padding: 3%;
+  /* margin: 22px; */
+ font-size: larger;
+}
+
+.block i{
+padding: 0 20px;
+}
+
+.block h4{
+  font-size: 180%;
+}
+
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btnnn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    outline: none;
+}
+
+.btnnn a{
+color: white;
+text-decoration: none;
+}
+
+.btnnn:hover{
+  color: yellow;
+  background-color: #202125;
+  border: 2px solid white;
+
+}
+
+p .center-p{
+display: flex;
+justify-content: center;
+}
+
+.center{
+    text-align: center;
+}
+/* gallery section */
+
+#gallery{
+ padding: 5.5%;
+ /* position: relative; */
+/* z-index: -1;  */
+}
+
+.gallery-image { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px; 
+}
+
+.gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.9s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 25%;
+    left: 36%;
+    opacity: 0.0;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+  }
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+     position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.1s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.632);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(1) {
+    position: absolute;
+    bottom: 50%;
+    /* left: 1%; */
+    font-size: 1.5em;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 1.0em;
+  }
+  
+  .opacity-low {
+    opacity: .5;
+  }
+
+/*   
+  .containerr {
+    position: relative;
+    z-index: -1;
+    width: 1200px;
+    min-height: 50px;
+    background: #fff;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .containerr .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: rgb(255, 251, 0);
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .containerr .box .imgbox {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .containerr .box .imgbox img {
+    max-width: 100%;
+    height:300px;
+    transform: 2s;
+  }
+
+  .containerr .box:hover .imgbox img {
+    transform: scale(1.1);
+  }
+
+  .containerr .box .details {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: black;
+    transform: scaleY(0);
+    transition: transform .5s;
+  }
+.containerr .box:hover .details{
+transform: scaleY(1);
+}
+  .containerr .box .details .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: white;
+  }
+
+  .containerr .box .details .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: yellow;
+  }
+
+  .containerr .box .details .content p {
+    margin: 10px 0 0;
+    padding: 0;
+  } */
+
+/* Move to top */
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+   font-size: 30px;
+ width: 50px;
+ height: 50px;
+   outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(255, 250, 0);
+  color: black;
+}
+
+#div1 {
+  font-size:50px;
+  color: rgb(0, 0, 0);
+}
+
+#div1{
+color: rgb(0, 0, 0);
+}
+
+#m:hover{
+background-color: yellow;
+}
+
+#m{
+/* border:1px solid #ffffff; */
+background-color: rgb(11, 214, 1);
+width: 5%;
+/* border-radius: 5px; */
+/* float:right; */
+position: absolute;
+top: 47%;
+left: 95%;
+position: fixed;
+}
