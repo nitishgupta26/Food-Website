@@ -2,41 +2,38 @@
 
 Kitchen24 is a online food we application.
 
-Link to site: http://kitchen24.herokuapp.com/
-
 ## Demo Pictures:
 Home Page:
 
-![App Screenshot](https://www.linkpicture.com/q/home_7.png)
+![App Screenshot](https://www.linkpicture.com/q/KitchenHome.png)
 
 About us page:
 
-![App Screenshot](https://www.linkpicture.com/q/about.png)
+![App Screenshot](https://www.linkpicture.com/q/About_3.png)
   
 Menu page:
 
-![App Screenshot](https://www.linkpicture.com/q/menu_9.png)
+![App Screenshot](https://www.linkpicture.com/q/Menu_1.png)
 
 Gallery page:
 
-![App Screenshot](https://www.linkpicture.com/q/gallery_2.png)
+![App Screenshot](https://www.linkpicture.com/q/Gallary.png)
 
 Contact page:
 
-![App Screenshot](https://www.linkpicture.com/q/contact_2.png)
+![App Screenshot](https://www.linkpicture.com/q/Contact-us.png)
 
 ## Features:
 - User can view menu category wise.
 - Users can send his/her order information from Contact form.
-- Mobile responsive
-- Deployed on heroku. 
+- Mobile responsive.
 
 
 ## Technologies used:
 
 **FrontEnd:**     HTML, CSS, Javascript.
 
-**BackEnd:** Node.js, Express.js, Mongodb, Pug.js.
+**BackEnd:** Node.js, Express.js, Mongodb.
 
   
 ## Installation:
@@ -51,5 +48,5 @@ Install my-project with npm
 ```
 ## Author:
 
-- [@mishalgupta](https://www.github.com/Mishalgupta)
+- [@nitishgupta](https://www.github.com/nitishgupta26)
     
