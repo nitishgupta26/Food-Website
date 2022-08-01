@@ -1,6 +1,6 @@
 # Kitchen24
 
-Kitchen24 is a online food we application.
+Kitchen24 is a online food web application.
 
 ## Demo Pictures:
 Home Page:
