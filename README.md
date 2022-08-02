@@ -1,5 +1,4 @@
 # Kitchen24
-Link to site: http://kitchen24.herokuapp.com/
 
 Kitchen24 is an online food web application.
 
